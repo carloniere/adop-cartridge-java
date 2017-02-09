@@ -4,10 +4,8 @@ def projectFolderName = "${PROJECT_NAME}"
 
 // Variables
 def projectNameKey = projectFolderName.toLowerCase().replace("/", "-")
-def referenceAppgitRepo = "spring-petclinic"
-def regressionTestGitRepo = "adop-cartridge-java-regression-tests"
-def referenceAppGitUrl = "ssh://jenkins@gerrit:29418/${PROJECT_NAME}/" + referenceAppgitRepo
-def regressionTestGitUrl = "ssh://jenkins@gerrit:29418/${PROJECT_NAME}/" + regressionTestGitRepo
+def referenceAppGitUrl = "http://ADOP-Clai-ProxyEla-1CLUI2K911BQ1-1014067839.ap-southeast-1.elb.amazonaws.com/gitlab/adop-clair/spring-petclinic.git"
+def regressionTestGitUrl = "http://ADOP-Clai-ProxyEla-1CLUI2K911BQ1-1014067839.ap-southeast-1.elb.amazonaws.com/gitlab/adop-clair/adop-cartridge-java-regression-tests.git"
 
 // Jobs
 def buildAppJob = freeStyleJob(projectFolderName + "/Reference_Application_Build")

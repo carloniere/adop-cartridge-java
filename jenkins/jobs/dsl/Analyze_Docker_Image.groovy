@@ -11,7 +11,7 @@ def analyzeDocker = freeStyleJob(projectFolderName + "/Analyze_Docker_Image")
 analyzeDocker.with{
 	label('docker')
     parameters {
-        stringParam("DOCKER_IMAGE_ID",,)
+        stringParam("DOCKER_IMAGE_ID",'','')
     }
 	steps {
 		shell ('''

@@ -3,7 +3,7 @@ def workspaceFolderName = "${WORKSPACE_NAME}"
 def projectFolderName = "${PROJECT_NAME}"
 
 // Variables
-def environmentTemplateGitUrl = "http://ADOP-Clai-ProxyEla-1CLUI2K911BQ1-1014067839.ap-southeast-1.elb.amazonaws.com/gitlab/adop-clair/adop-cartridge-java-environment-template.git"
+def environmentTemplateGitUrl = "git@gitlab:PDC_Security_HackathonFY17/adop-cartridge-java-environment-template.git "
 
 // Jobs
 def environmentProvisioningPipelineView = buildPipelineView(projectFolderName + "/Environment_Provisioning")
